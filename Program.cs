@@ -1,10 +1,8 @@
 ﻿using System;
 
-namespace PST1
+namespace AreaCalculator
 {
-    /// <summary> This class is used to calculate the area of several shapes </summary>
-    /// <student_name> Anh Nguyen Dac Duy </student_name>
-    /// <student_id> 10603280 </student_id>
+    /// <summary> This class is used to calculate the area of Circle, Rectangle and Polygon </summary>
     class Program
     {
         static void Main(string[] args)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AreaCalculator
 {
@@ -7,7 +7,7 @@ namespace AreaCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\nWELCOME TO THE AREA CALCULATOR!\n***");
+            Console.WriteLine("WELCOME TO THE AREA CALCULATOR!\n***");
             double option = 0;
             // Put the choices and calculations in a While Loop
             while (option != 4) {
@@ -24,10 +24,18 @@ namespace AreaCalculator
                 if      (option == 1)  { CircleArea();    }
                 else if (option == 2)  { RectangleArea(); }
                 else if (option == 3)  { PolygonArea();   }
+
+                if (option != 4)
+                {
+                    Console.WriteLine("\nEnter to continue...");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
             }
             // If user chooses 4. Quit, then...
-            Console.WriteLine("\n=================================\nGoodbyeee !");
-            Console.WriteLine("=================================\n\n\n\n\n");
+            Console.WriteLine("=================================");
+            Console.WriteLine("Goodbyeee !");
+            Console.WriteLine("=================================\n");
             // Wait for Enter to close the terminal
             Console.ReadLine();
         }
@@ -35,7 +43,7 @@ namespace AreaCalculator
         /// <summary>
         /// A method to print out a menu of options
         /// </summary>
-        static void Menu() {Console.WriteLine("\nMain menu:\n   1) Circle\n   2) Rectangle\n   3) Polygon\n   4) Quit\n"); }
+        static void Menu() {Console.WriteLine("Main menu:\n   1) Circle\n   2) Rectangle\n   3) Polygon\n   4) Quit\n"); }
 
         const double pi = 3.14159;
 
@@ -50,6 +58,7 @@ namespace AreaCalculator
             // Calculate its area
             double area = pi * Math.Pow(radius, 2);
             // Print out that area
+            Console.WriteLine("--------------------------------");
             Console.WriteLine($"The area is {area:F2}");
             Console.WriteLine("--------------------------------");
         }
@@ -68,6 +77,7 @@ namespace AreaCalculator
             // Calculate its area
             double area = side1 * side2;
             // Print out that area
+            Console.WriteLine("--------------------------------");
             Console.WriteLine($"The area is {area:F2}");
             Console.WriteLine("--------------------------------");            
         }
@@ -88,6 +98,7 @@ namespace AreaCalculator
             // Calculate its area
             double area = (Math.Pow(sideLength, 2) * sideNum) / 4 / Math.Tan(pi/sideNum);
             // Print out that area
+            Console.WriteLine("--------------------------------");
             Console.WriteLine($"The area is {area:F2}");
             Console.WriteLine("--------------------------------");
         }

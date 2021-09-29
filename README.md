@@ -7,4 +7,4 @@ IMPORTANT: Don't copy exactly as you may be subject to academic misconduct. Plea
 ---
 
 A menu-driven C# Console-application that allows users to calculate the area of Circle, Rectangle and Polygon.  
-Using bsic methods in C#  
+Using methods in C#  
